@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-power-shell Component Wiki
+# SigmaOS-power-shell Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-power-shell provides PowerShell-like command interpreter with cmdlets and pipeline execution for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-power-shell provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-power-shell Abstraction
-- Fail-Fast on SigmaOS-power-shell Initialization Errors
-- Deterministic SigmaOS-power-shell Setup
-- Clear Abstraction Over SigmaOS-power-shell APIs
-- Composition over Inheritance for SigmaOS-power-shell extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-power-shell Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-power-shell Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-power-shell Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-power-shell APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-power-shell extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-power-shell follows a SigmaOS-power-shell pattern:
+SigmaOS-power-shell follows a SigmaOS-power-shell pattern:
 - **SigmaOS-power-shell Core**: Provides SigmaOS-power-shell support, SigmaOS-power-shell management, and SigmaOS-power-shell tracking
 - **Management**: Supports SigmaOS-power-shell management, SigmaOS-power-shell configuration, and SigmaOS-power-shell lifecycle
 - **Tracking**: Supports SigmaOS-power-shell status, SigmaOS-power-shell tracking, and SigmaOS-power-shell lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-power-shell follows a SigmaOS-power-shell pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-power-shell by given configuration
--  - Register a SigmaOS-power-shell by given name
--  - Get SigmaOS-power-shell status and SigmaOS-power-shell availability
--  - Track SigmaOS-power-shell management and SigmaOS-power-shell tracking
+- Manage a SigmaOS-power-shell by given configuration
+- Register a SigmaOS-power-shell by given name
+- Get SigmaOS-power-shell status and SigmaOS-power-shell availability
+- Track SigmaOS-power-shell management and SigmaOS-power-shell tracking
 - Error types for SigmaOS-power-shell failure scenarios or unsupported SigmaOS-power-shell types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-power-shell init, SigmaOS-power-shell management)
 3. **Assert**: Verify the expected SigmaOS-power-shell results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-power-shell initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-power-shell failure scenarios
 - Unit tests provided for SigmaOS-power-shell management and configuration
